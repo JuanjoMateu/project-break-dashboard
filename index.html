@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Portal de Inicio</title>
+</head>
+<body style="background-image: none;">
+    <main class="main">
+      <section class="list-container">
+        <div class="list">
+          <div class="title">
+            <h2>Añade tu enlace de interés</h2>
+            <img src="../assets/img/cadena.png" alt="link">
+          </div>
+          <div class="input-container">
+            <input type="text" id="name-input" placeholder="Nombre de tu enlace" required>
+            <input type="text" id="url-input" required placeholder="Pega aqui la URL">
+            <button id="add-link-button" class="add-link-button">Añadir enlace</button>
+          </div>
+          <ul id="links-container" class="links-container"></ul>
+        </div>
+      </section>
+      <section class="time-container">
+        <div class="digital-clock">
+          <div id="time" class="time"></div>
+          <div id="date" class="date"></div>
+        </div>
+        <div id="currentWeather" class="currentWeather">
+          <h2>Marratxí</h2>
+          <p></p>
+          <div class="current-data">
+            <div class="current-grades">
+              <img class="weather-icon" src="" alt="">
+              <div>
+                <img src="" alt="grados">
+              </div>
+            </div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        <ul id="forecastWeather" class="forecastWeather">
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+          <li class="forecast-grades">
+            <span>
+              <span>
+                <img class="weather-icon" src="" alt="">
+              </span>
+            </span>
+          </li>
+        </ul>
+    </div>
+      </section>
+      <section></section>
+      <section class="pass-container">
+        <div class="pass">
+          <div class="title">
+            <h2>Crea tu contraseña segura</h2>
+            <img src="../assets/img/candado.png" alt="link">
+          </div>
+          <div id="passwordForm" class="passwordForm">
+            <label for="length">Número de carácteres de la Contraseña</label>
+            <input type="number" id="length" name="length" min="12" max="50" value="12">
+            <button type="button" onclick="generatePassword()">Generar Contraseña</button>
+            <div id="passwordResult" class="password-result"></div>
+          </div>
+        </div> 
+        <footer class="footer">
+          <nav>
+            <a href="html/digital-clock.html">
+              <img src="../assets/img/reloj-de-pared.png" alt="reloj">
+            </a>
+            <a href="html/key-generator.html">
+              <img src="../assets/img/candado.png" alt="candado">
+            </a>
+            <a href="html/link-collect.html">
+              <img src="../assets/img/cadena.png" alt="cadena">
+            </a>
+            <a href="html/weather.html">
+              <img src="../assets/img/nube.png" alt="nube">
+            </a>
+          </nav>
+        </footer>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="./js/link-collect.js"></script>
+    <script src="./js/digital-clock.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/key-generator.js"></script>
+</body>
+</html>
